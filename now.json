@@ -1,8 +1,10 @@
 {
   "builds": [
-    { "src": "*.html", "use": "@now/static" },
-    { "src": "*.css", "use": "@now/static" },
-    { "src": "package.json", "use": "@now/static-build" }
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
   ],
   "version": 2,
   "alias": ["www.julianajaimej.com", "julianajaimej.com"]
